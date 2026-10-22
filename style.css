@@ -6,3 +6,9 @@
     --accent-blue: #58a6ff;
     --border-subtle: #30363d;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
