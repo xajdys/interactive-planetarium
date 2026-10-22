@@ -12,11 +12,11 @@
 <body>
     <div class="container">
         <section class="card">
-            <h1>Cosmic Observatory</h1>
-            <p>"Explore celestial bodies by selecting a hotspot"</p>
+            <h1>COSMIC OBSERVATORY</h1>
+            <p class="center">"Explore celestial bodies by selecting a hotspot"</p>
         </section>
 
-        <section class="card">
+        <section class="card image">
             <img src="solar-system.avif" usemap="#controls" alt="solar system interactive diagram">
 
             <map name="controls">
@@ -26,31 +26,32 @@
 
         <section class="card">
             <h2>CELESTIAL DETAILS SECTION</h2>
+            <div class="info">
+                <section id="sun">
+                    <h3>Sun Details:</h3>
+                    <p><b>Temp:</b> 5,500 deg C</p>
+                    <p><b>Type:</b> Yellow Dwarf</p>
+                    <p><b>More: </b><a href="https://en.wikipedia.org/wiki/Sun">Wikipedia Page</a></p>
+                </section>
 
-            <section id="sun">
-                <h3>Sun Details:</h3>
-                <p><b>Temp:</b> 5,500 deg C</p>
-                <p><b>Type:</b> Yellow Dwarf</p>
-                <p><b>More: </b><a href="https://en.wikipedia.org/wiki/Sun">Wikipedia Page</a></p>
-            </section>
+                <section id="earth">
+                    <h3>Earth Details:</h3>
+                    <p><b>Temp:</b> 5,15 deg C</p>
+                    <p><b>Type:</b> Terrestial</p>
+                    <p><b>More: </b><a href="https://en.wikipedia.org/wiki/Earth">Wikipedia Page</a></p>
+                </section>
 
-            <section id="earth">
-                <h3>Earth Details:</h3>
-                <p><b>Temp:</b> 5,15 deg C</p>
-                <p><b>Type:</b> Terrestial</p>
-                <p><b>More: </b><a href="https://en.wikipedia.org/wiki/Earth">Wikipedia Page</a></p>
-            </section>
+                <section id="moon">
+                    <h3>Moon Details:</h3>
+                    <p><b>Temp:</b> -130 to -120 deg C</p>
+                    <p><b>Type:</b> Natural Satellite</p>
+                    <p><b>More: </b><a href="https://en.wikipedia.org/wiki/Moon">Wikipedia Page</a></p>
+                </section>
+            </div>
+        </section>
 
-            <section id="moon">
-                <h3>Moon Details:</h3>
-                <p><b>Temp:</b> -130 to -120 deg C</p>
-                <p><b>Type:</b> Natural Satellite</p>
-                <p><b>More: </b><a href="https://en.wikipedia.org/wiki/Moon">Wikipedia Page</a></p>
-            </section>
-
-            <section class="card">
-                <p>Made with 💗 by Xai</p>
-            </section>
+        <section class="card">
+            <p class="center">Made with 💗 by Xai</p>
         </section>
     </div>
     <script src="app.js"></script>
