@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Planetarium 🪐</title>
+    <link rel="icon" href="saturn.png">
+    <style>
+        :root {
+            --bg-space: #0b0e14;
+            --card-bg: #161b22;
+            --text-main: #e6edf3;
+            --accent-gold: #f1e05a;
+            --accent-blue: #58a6ff;
+            --border-subtle: #30363d;
+        }
+
+        body {
+            background: url('background.jpg');
+            position: relative;
+        }
+
+        img {
+            width: 700px;
+            margin: 10px;
+            position: fixed;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            width: clamp(400px, 80%, 880px);
+            margin: 0.5rem;
+            padding: 2rem;
+            border: 2px solid var(--border-subtle);
+            border-radius: 20px;
+            position: absolute;
+            top: 400px;
+            z-index: 2;
+        }
+
+        h2 {
+            color: var(--accent-gold);
+            text-align: center;
+        }
+
+        li {
+            color: var(--text-main);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="solar-system.avif" alt="Solar System diagram with clickable regions for celestial bodies" usemap="#controls">
+
+    <map id="controls" name="controls">
+        <area shape="rect" coords="16,60,168,358" href="https://en.wikipedia.org/wiki/Sun" alt="Sun">
+        <area shape="rect" coords="196,209,248,254" href="https://en.wikipedia.org/wiki/Mercury" alt="Mercury">
+        <area shape="rect" coords="227,111,295,167" href="https://en.wikipedia.org/wiki/Venus" alt="Venus">
+        <area shape="rect" coords="281,234,345,301" href="https://en.wikipedia.org/wiki/Earth" alt="Earth">
+        <area shape="rect" coords="333,144,395,200" href="https://en.wikipedia.org/wiki/Mars" alt="Mars">
+        <area shape="rect" coords="395,166,522,283" href="https://en.wikipedia.org/wiki/Jupiter" alt="Jupiter">
+        <area shape="rect" coords="436,65,604,160" href="https://en.wikipedia.org/wiki/Saturn" alt="Saturn">
+        <area shape="rect" coords="528,248,616,327" href="https://en.wikipedia.org/wiki/Uranus" alt="Uranus">
+        <area shape="rect" coords="596,138,670,199" href="https://en.wikipedia.org/wiki/Neptune" alt="Neptune">
+        <area shape="rect" coords="298,196,324,222" href="https://en.wikipedia.org/wiki/Moon" alt="Moon">
+    </map>
+
+    <section class="card">
+        <h2>How to Observe?</h2>
+
+        <ol>
+            <li>Click on the interested body.</li>
+            <li>On clicking, you will be taken to the Wikipedia page of the respective body.</li>
+            <li>No JS used. A pure html and css magic!</li>
+        </ol>
+    </section>
+</body>
+
+</html>
